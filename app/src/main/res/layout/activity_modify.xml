@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/love"
+    tools:context=".auth.JoinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/modifyImage"
+                android:src="@drawable/profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modifyName"
+                    android:hint="닉네임"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/question"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="성별(M/W)"-->
+            <!--                android:background="@color/white"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/radioGroup"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/radioGroup" />-->
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/radioGroup"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:background="@color/white"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/rg_btn1"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="M" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/rg_btn2"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="W" />-->
+
+            <!--            </RadioGroup>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modifyCity"
+                    android:hint="전공"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/modifyArea"
+                    android:hint="나이"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/modifyBtn"
+                android:layout_margin="10dp"
+                android:text="정보수정"
+                android:layout_width="match_parent"
+                android:background="@color/mainColor"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
